@@ -13,7 +13,8 @@ class Game
     while self.rounds.positive?
       human.guess=()
       self.rounds -= 1
-      rounds
+      p rounds
+      break if computer.code_correct?(human.guess)
     end
   end
 end
