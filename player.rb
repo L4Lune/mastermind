@@ -4,6 +4,4 @@ class Player
   def initialize
     @guess = nil
   end
-
-  def 
 end
