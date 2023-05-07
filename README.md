@@ -7,7 +7,7 @@
       * Start by generating a random 4 digit/color code from 1-6 or Red, Yellow, Purple, Green, Blue, Orange
   * Game
     * Display guess
-  * Feedback (could be part of board)
+  * Feedback (could be part of game)
     * Display feedback
   * Number/Colors/Icons could be a module board would load
     * Store the objects that will be displayed as the code colors/numbers and the feedback pegs
@@ -18,8 +18,8 @@
 
 
 Set Up
-1. Computer creates a code
-2. A player is created from Player class with instance variable @guess
+1. Computer creates a code (DONE)
+2. A player is created from Player class with instance variable @guess (DONE)
 
 Game Loop (12 rounds)
 1. The player inputs their guess
