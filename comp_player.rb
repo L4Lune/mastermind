@@ -7,9 +7,9 @@ class CompPlayer
 
   def code_correct?(user_guess)
     if user_guess == code
-      return true
+      true
     elsif user_guess != code
-      return false
+      false
     end
   end
 
