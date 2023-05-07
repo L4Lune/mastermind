@@ -1,5 +1,11 @@
 require_relative 'comp_player'
+require_relative 'player'
+require_relative 'game'
+require 'pry-byebug'
 
+game = Game.new
 code = CompPlayer.new
 
-code.create_code
+p code.code
+binding.pry
+game.play
