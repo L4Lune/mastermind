@@ -22,18 +22,18 @@ Set Up
 2. A player is created from Player class with instance variable @guess (DONE)
 
 Game Loop (12 rounds)
-1. The player inputs their guess
-2. The guess is compared to the code
+1. The player inputs their guess (DONE)
+2. The guess is compared to the code (DONE)
 If the guess is incorrect then
 3. The guess is then displayed on the board
 4. Feedback is then displayed on the board
   4.1 Feedback needs to be displayed with correct nodes (icons) followed by incorrect nodes (icons)
   4.2 Some logic that states if there are two instances of the same color/number that only one feedback item appears 
-5. Decrement the rounds counter
+5. Decrement the rounds counter (DONE)
   If the rounds counter reaches zero:
   5.1 Display a message of you didn't break the code
   5.2 Option to play again is displayed
-6. The player inputs another guess
+6. The player inputs another guess (DONE)
 If the guess is correct
 7. The guess is displayed on the board with a message of you broke the code
 8. Option to play again is displayed
