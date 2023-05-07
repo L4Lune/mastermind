@@ -13,6 +13,10 @@ class CompPlayer
     end
   end
 
+  def display_code
+    p "The code to break was: #{code}."
+  end
+
   # def transform_code
   #   code.map(&:to_s)
   # end
