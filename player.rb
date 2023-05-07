@@ -8,6 +8,6 @@ class Player
   def guess=(*)
     puts 'Enter your code guess: '
     @guess = gets.chomp.split('')
-    p guess
+    puts guess
   end 
 end

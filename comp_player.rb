@@ -14,7 +14,7 @@ class CompPlayer
   end
 
   def display_code
-    p "The code to break was: #{code}."
+    print "The code to break was: #{code}."
   end
 
   # def transform_code

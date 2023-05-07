@@ -5,5 +5,5 @@ require 'pry-byebug'
 
 game = Game.new
 
-binding.pry
+# binding.pry
 game.play

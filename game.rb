@@ -10,18 +10,21 @@ class Game
   def initialize
     @human = Player.new
     @computer = CompPlayer.new
-    @rounds = 12
+    @rounds = 1
   end
 
   def play
-    while rounds.positive?
-      if rounds == 1 
+    while rounds <= 12
+      p "Round ##{rounds}: "
+      if rounds == 12
         last_turn
       end
       human.guess=()
-      self.rounds -= 1
-      p rounds
       break if computer.code_correct?(human.guess)
+
+      incorrect_guess(human.guess, rounds)
+      self.rounds += 1
     end
+    computer.display_code
   end
 end
