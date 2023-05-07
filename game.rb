@@ -10,7 +10,7 @@ class Game
   end
 
   def play
-    while self.rounds.positive?
+    while rounds.positive?
       human.guess=()
       self.rounds -= 1
       p rounds
