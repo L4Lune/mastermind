@@ -3,4 +3,8 @@ module Icons
     user_guess.each { |num| print num + " " }
     puts " "
   end
+
+  def display_feedback
+    print '  Clues: '
+    puts " "
 end
