@@ -1,6 +1,6 @@
 module TextPrompts
-  def incorrect_guess
-    p 'That was not the code. Please try again.'
+  def incorrect_guess(user_guess)
+    print " #{user_guess} is not the code. Please try again."
   end
 
   def last_turn
