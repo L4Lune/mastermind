@@ -1,7 +1,8 @@
 require_relative 'text_prompts'
+require_relative 'icons'
 
 class Game
-  # include Icons
+  include Icons
   include TextPrompts
 
   attr_reader :human, :computer
@@ -13,10 +14,17 @@ class Game
     @rounds = 1
   end
 
-  def display_feedback(user_guess, computer_code)
-    user_guess.each { |num| print num + " " }
-    print "  Clues: "
-    puts " "
+  def generate_feedback(user_guess, computer_code)
+    i =0
+    exact_matches = 0
+    same_matches = 0
+    for i in user_guess.length do
+      if user_guess[i] == computer_code[i]
+        exact += 1
+      elsif user_guess[i].include?(computer_code)
+        same += 1
+      end
+    end
   end
 
   def play
@@ -29,6 +37,8 @@ class Game
       break if computer.code_correct?(human.guess)
 
       incorrect_guess(human.guess, rounds)
+      display_guess(human.guess)
+      generate_feedback(human.guess, computer.code)
       display_feedback(human.guess, computer.code)
       self.rounds += 1
     end
